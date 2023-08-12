@@ -132,20 +132,35 @@ a {
   font-size: 3.5rem;
   color: $light-grey;
   margin: 1%;
-  font-weight: lighter;}
+  font-weight: lighter;
+}
 
-.App-header .title span {  font-weight: lighter;
+.App-header .title span {
+  font-weight: lighter;
 }
 
 .App-header .subtitle {
   font-size: 2.5rem;
   margin: 0;
-  font-weight: lighter;  color: $light-brown;
+  font-weight: lighter;
+  color: $light-brown;
 }
 
 .first-section {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3% 0;
+  box-shadow: rgba(206, 204, 198, 0.048) 0px 8px 24px,
+    rgba(202, 202, 202, 0.062) 0px 16px 56px,
+    rgba(207, 207, 207, 0.062) 0px 24px 80px;
   width: 100%;
-  height: 50vh;
+}
+
+.introduction {
+  width: 100%;
   display: flex;
   flex-direction: row;
 }
@@ -159,12 +174,13 @@ a {
   flex: 1;
   padding: 2% 5%;
   margin: auto;
-  padding-left: 7%;
+  padding-left: 2%;
 }
 
 .first-section .special-bg {
   padding: 3% 0;
-  border-radius: 10px;  background-image: url("./assets/brush2.png");
+  border-radius: 10px;
+  background-image: url("./assets/brush2.png");
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -175,19 +191,21 @@ a {
 .first-section .right-pane {
   flex: 1;
   font-size: 2.8rem;
-  padding-right: 7%;
-  margin: auto;}
+  padding-right: 2%;
+  margin: auto;
+}
 
-.first-section .gold-text {  color: $light-brown;
+.first-section .gold-text {
+  color: $light-brown;
 }
 
 .first-section .right-pane h3 {
   font-weight: lighter;
 }
-.image {
+.image-container {
   margin: auto;
   margin-bottom: 5%;
-  width: 60%;
+  width: 70%;
   border: #000 1px solid;
   display: flex;
   flex-direction: row;
@@ -197,17 +215,21 @@ a {
   overflow: hidden;
   background-color: $light-brown;
 }
-.image .text {
+.image {
+  flex: 2
+}
+.image-container .text {
   padding: 5%;
   font-size: 1.3rem;
   line-height: 1.5;
   font-weight: 500;
+  flex: 2;
 }
-.image .text h2 {
+.image-container .text h2 {
   margin: 0;
 }
-.image img {
-  width: 450px;
+.image-container img {
+  max-width: 100%; 
 }
 .second-section {
   background-image: url("./assets/2.png");
@@ -245,7 +267,8 @@ a {
   align-items: center;
   justify-content: center;
   color: #000;
-  font-weight: lighter;  font-size: 1.5rem;
+  font-weight: lighter;
+  font-size: 1.5rem;
   text-align: center;
   padding: 2%;
   line-height: 1.8;
@@ -256,7 +279,7 @@ a {
   justify-content: center;
 }
 
-.second-section .bg-darken {
+.third-section .bg-darken {
   width: 100%;
   background-color: rgba(5, 0, 73, 0.336);
   height: 100%;
@@ -265,20 +288,28 @@ a {
   left: 0;
   z-index: 0;
 }
-
+.first-section h2,
 .second-section h2,
 .third-section h2,
 .gallery h2 {
   position: relative;
-  font-weight: lighter;  font-size: 3.5rem;
+  font-weight: lighter;
+  font-size: 3.5rem;
+  white-space: nowrap;
 }
 
 .brush {
+  text-align: center;
   background-image: url("./assets/brush.png");
   background-position: center;
+  background-repeat: no-repeat;
   background-size: 100%;
   z-index: 1;
   margin: 1.5%;
+  width: 350px;
+}
+.courses-title {
+  font-size: 2.5rem;
 }
 
 .MuiTypography-root {
@@ -286,7 +317,6 @@ a {
 }
 
 .third-section {
-  height: 80vh;
   overflow: hidden;
   position: relative;
   display: flex;
@@ -296,6 +326,22 @@ a {
   width: 100%;
 }
 
+.third-section .details {
+  font-size: 1.5rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0 10%;
+}
+.course-container {
+  padding: 3% 5%;
+  width: 80vw;
+
+}
+.course-container p {
+  font-size: 1.2rem;
+}
+ .course-container li {
+  font-size: 1.1rem;
+}
 .third-section .lessons {
   display: flex;
   flex-direction: row;
@@ -319,7 +365,8 @@ a {
 .video-container {
   background-color: #292929;
   padding: 1% 0;
-  margin-bottom: 2% ;
+  margin-bottom: 2%;
+  width: 100%;
 }
 .gallery {
   position: relative;
@@ -330,13 +377,12 @@ a {
   width: 95%;
 }
 .video-title {
-  text-align: center; 
+  text-align: center;
   font-size: 1.5rem;
-
 }
 .gallery p {
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 2.0rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2rem;
   font-weight: 100;
   margin: 0.5% 0;
   font-style: italic;
@@ -378,30 +424,44 @@ a {
 .abdev-img {
   width: 30%;
 }
-
-.stats {
+.recommended {
+  position: absolute;
+  display: inline-block;
+  font-size: 1rem;
+  transform: rotate(-30deg);
+  color: $cherry;
+}
+.courseheader {
   display: flex;
   flex-direction: row;
-  width: 70%;
+  width: 100%;
+  max-height: 100px;
   flex: 1;
   justify-content: space-around;
   margin: 0 auto 2% auto;
+  background-color: #292929;
 }
 
-.stat {
+.courseheader-column {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;}
-.stat-number {
-  font-size: 4rem;
+  justify-content: center;
+  flex: 1;
+  text-align: center;
+}
+.courseheader-column-number {
+  font-size: 3rem;
   margin: 0;
 }
 
-.stat-title {
+.courseheader-column-title {
   font-size: 1.5rem;
+  margin: 0;
 }
-
+.courseheader-column-title-large {
+  font-size: 2rem;
+}
 .MuiInputLabel-root {
   left: unset;
   right: 1.75rem;
@@ -414,6 +474,7 @@ a {
   display: flex;
   flex-direction: row;
   padding-top: 5%;
+  flex: 1;
 }
 
 .contact-section p {
@@ -424,14 +485,15 @@ a {
 .contact-section .left-pane {
   flex: 1;
   padding-right: 5%;
-  padding-left: 7%;
+  padding-left: 3%;
 }
 
 .contact-section .right-pane {
   flex: 1;
   font-size: 2.8rem;
-  padding-right: 7%;
-  margin: auto;}
+  padding-right: 3%;
+  margin: auto;
+}
 
 .video {
   display: flex;

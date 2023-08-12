@@ -1,105 +1,75 @@
-import rec1 from "../assets/rec1.jpg";
-import Box from "@mui/material/Box";
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListItemIcon from "@mui/material/ListItemIcon";
-import ListItemText from "@mui/material/ListItemText";
 import Divider from "@mui/material/Divider";
 import { useState } from "react";
-
-const lessons = [
-  {
-    name: "שיעור 1 - שיעור ראשון",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam velit arcu, interdum eu faucibus a, vehicula eget velit. Ut lacinia risus vitae nibh iaculis pulvinar. Donec varius at est sed scelerisque. Aenean aliquet ac augue nec mollis. Donec tempus nec sapien a iaculis. Morbi molestie in lacus in suscipit.",
-  },
-  {
-    name: "שיעור 2 - שיעור שני",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam velit arcu, interdum eu faucibus a, vehicula eget velit. Ut lacinia risus vitae nibh iaculis pulvinar. Donec varius at est sed scelerisque. Aenean aliquet ac augue nec mollis. Donec tempus nec sapien a iaculis. Morbi molestie in lacus in suscipit.",
-  },
-  {
-    name: "שיעור 3 - שיעור שלישי",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam velit arcu, interdum eu faucibus a, vehicula eget velit. Ut lacinia risus vitae nibh iaculis pulvinar. Donec varius at est sed scelerisque. Aenean aliquet ac augue nec mollis. Donec tempus nec sapien a iaculis. Morbi molestie in lacus in suscipit.",
-  },
-  {
-    name: "שיעור 4 - שיעור רביעי",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam velit arcu, interdum eu faucibus a, vehicula eget velit. Ut lacinia risus vitae nibh iaculis pulvinar. Donec varius at est sed scelerisque. Aenean aliquet ac augue nec mollis. Donec tempus nec sapien a iaculis. Morbi molestie in lacus in suscipit.",
-  },
-  {
-    name: "שיעור 5 - שיעור חמישי",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam velit arcu, interdum eu faucibus a, vehicula eget velit. Ut lacinia risus vitae nibh iaculis pulvinar. Donec varius at est sed scelerisque. Aenean aliquet ac augue nec mollis. Donec tempus nec sapien a iaculis. Morbi molestie in lacus in suscipit.",
-  },
-  {
-    name: "שיעור 6 - שיעור שישי",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam velit arcu, interdum eu faucibus a, vehicula eget velit. Ut lacinia risus vitae nibh iaculis pulvinar. Donec varius at est sed scelerisque. Aenean aliquet ac augue nec mollis. Donec tempus nec sapien a iaculis. Morbi molestie in lacus in suscipit.",
-  },
-  {
-    name: "שיעור 7 - שיעור שביעי",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam velit arcu, interdum eu faucibus a, vehicula eget velit. Ut lacinia risus vitae nibh iaculis pulvinar. Donec varius at est sed scelerisque. Aenean aliquet ac augue nec mollis. Donec tempus nec sapien a iaculis. Morbi molestie in lacus in suscipit.",
-  },
-  {
-    name: "שיעור 8 - שיעור שמיני",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam velit arcu, interdum eu faucibus a, vehicula eget velit. Ut lacinia risus vitae nibh iaculis pulvinar. Donec varius at est sed scelerisque. Aenean aliquet ac augue nec mollis. Donec tempus nec sapien a iaculis. Morbi molestie in lacus in suscipit.",
-  },
-  {
-    name: "שיעור 9 - שיעור תשיעי",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam velit arcu, interdum eu faucibus a, vehicula eget velit. Ut lacinia risus vitae nibh iaculis pulvinar. Donec varius at est sed scelerisque. Aenean aliquet ac augue nec mollis. Donec tempus nec sapien a iaculis. Morbi molestie in lacus in suscipit.",
-  },
-  {
-    name: "שיעור 10 - שיעור עשירי",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam velit arcu, interdum eu faucibus a, vehicula eget velit. Ut lacinia risus vitae nibh iaculis pulvinar. Donec varius at est sed scelerisque. Aenean aliquet ac augue nec mollis. Donec tempus nec sapien a iaculis. Morbi molestie in lacus in suscipit.",
-  },
-  {
-    name: "שיעור 11 - שיעור אחד עשר",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam velit arcu, interdum eu faucibus a, vehicula eget velit. Ut lacinia risus vitae nibh iaculis pulvinar. Donec varius at est sed scelerisque. Aenean aliquet ac augue nec mollis. Donec tempus nec sapien a iaculis. Morbi molestie in lacus in suscipit.",
-  },
-];
-
-function BasicList({ handleClick }) {
-  return (
-    <Box sx={{ width: "100%", maxWidth: 360, bgcolor: "background.paper" }}>
-      <nav aria-label="secondary mailbox folders">
-        <List>
-          {lessons.map((lesson, index) => (
-            <ListItem disablePadding>
-              <ListItemButton onClick={() => handleClick(index)}>
-                <ListItemText primary={lesson.name} />
-              </ListItemButton>
-            </ListItem>
-          ))}
-        </List>
-      </nav>
-    </Box>
-  );
-}
+import CourseHeader from "./CourseHeader";
 
 export default function Lessons() {
-  const [viewedLesson, setViewedLesson] = useState(0);
-
-  const handleClick = (key) => {
-    setViewedLesson(key);
-  };
-
   return (
     <section className="third-section">
+
       <div className="brush">
-        <h2>מה בתוכנית?</h2>
+        <h2 className="courses-title">מסלולים</h2>
       </div>
-      <div className="lessons">
-        <BasicList handleClick={handleClick} />
-        <Divider />
-        <p className="lesson-desc">{lessons[viewedLesson]?.description}</p>
+      <CourseHeader
+        courseType={"קורס אינטנסיבי"}
+        lessonsCount={9}
+        equipType={"ציוד מתקדם"}
+      />
+      <div className="course-container">
+        <h1>מה כולל המסלול האינטנסיבי?</h1>
+        <p>
+          בשיעור הראשון עם עידן מנהל האקדמיה נקבל הדגמת תספורות, דירוגים
+          מטורפים, גזירות, פנסים, ציורי ראש, עיצובי זקן, צילום ושיווק וכן גם
+          תתנסו באופן פרקטי חלקי.
+        </p>
+        <p>
+          ב-8 השיעורים הנוספים אתם תבצעו במו ידיכם תספורות מלאות, שילובים,
+          גזירות ועיצובי זקן! כמובן כל זה בהשגחה פרטנית של עידן. רק אתם, הוא
+          והמודליסט. ממש שיעור פרטי לכל דבר!
+        </p>
+        <p>רשימת הציוד שתקבל בסוף הקורס:</p>
+        <ul>
+          <li>סט מכונות של JRL (מכונת שילובים ומכונת פיניש ומסגרות)</li>
+          <li>שייבר של אנדיס</li>
+          <li>עוד מכונת פיניש להורדת מסה של kemei</li>
+          <li>חלוק למסתפר</li>
+          <li>סינר מעוצב לברבר</li>
+          <li>חבילת תערים גדולה (100 סכינים)</li>
+          <li>ידית מקצועית לתער</li>
+          <li>מברשת פייד גדולה וקטנה</li>
+          <li>חלוק מעוצב עם הלוגו שאנחנו נבנה במיוחד בשבילכם</li>
+          <li>מנקה צוואר</li>
+          <li>ספריי חיטוי של אנדיס למכונות / בקבוק חיטוי לעור הלקוח</li>
+          <li>חבילת נייר צוואר</li>
+        </ul>
+      </div>
+      <CourseHeader
+        courseType={"קורס מהיר"}
+        lessonsCount={7}
+        equipType={"ציוד בסיסי"}
+      />
+      <div className="course-container">
+        <h1>מה כולל המסלול המהיר?</h1>
+        <p>
+          בשיעור ראשון עם עידן מנהל האקדמייה נקבל הדגמת תספורת מלאה על מודליסט
+          אמיתי ונראה מהצד איך נראות טכניקות השילובים והגזירות שפיתח במשך השנים.
+        </p>
+        <p>
+          ב-6 השיעורים הנוספים אתם תבצעו תספורות מלאות על מודליסטים אמיתיים במו
+          ידיכם בהשגחה פרטנית של עידן וצוות האקדמייה.
+        </p>
+        <p>
+          השיעורים כוללים את הנושאים הבאים: שילובים, גזירות, מסגרות, עבודה עם
+          תער, עיצובי זקן.
+        </p>
+        <p>בציוד המסופק תקבלו:</p>
+        <ul>
+          <li>סט מכונות JRL</li>
+          <li>מכונת דירוגים</li>
+          <li>מכונת פיניש/מסגרות</li>
+          <li>חבילת תערים</li>
+          <li>ידית לתער</li>
+          <li>מברשת פייד ומנקה צוואר</li>
+        </ul>
       </div>
     </section>
   );

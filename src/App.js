@@ -25,7 +25,6 @@ function App() {
       <div className="App">
         <Header />
         <Introduction />
-        <WhatsIncluded />
         <Lessons />
         <FourthSection />
         <Contact />

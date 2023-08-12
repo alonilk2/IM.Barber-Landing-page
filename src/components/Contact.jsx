@@ -55,8 +55,9 @@ export default function Contact() {
       </div>
       <div className="left-pane">
         <img
+          width={"100%"}
           src={
-            "https://maps.googleapis.com/maps/api/staticmap?markers=color:blue%7Ccenter=Yaqinton+St+3%2C+Nof+Hagalil&zoom=17&size=1000x500&maptype=roadmap&format=png&key=AIzaSyDovloIuIIwjhtE_h70uCzYedVl7KeOifo&map_id=ac719b618b3ec786"
+            "https://maps.googleapis.com/maps/api/staticmap?markers=color:yellow%7Ccenter=Yaqinton+St+3%2C+Nof+Hagalil&scale=2&zoom=17&size=800x500&maptype=roadmap&format=png&key=AIzaSyDovloIuIIwjhtE_h70uCzYedVl7KeOifo&map_id=ac719b618b3ec786"
           }
           alt="Map"
         />
