@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/IM.Barber-Landing-page/static/css/main.4f26bd15.css",
-    "main.js": "/IM.Barber-Landing-page/static/js/main.1b1fcf57.js",
+    "main.css": "/IM.Barber-Landing-page/static/css/main.acd765b1.css",
+    "main.js": "/IM.Barber-Landing-page/static/js/main.e06562de.js",
     "static/js/787.ca1d11b7.chunk.js": "/IM.Barber-Landing-page/static/js/787.ca1d11b7.chunk.js",
     "static/media/1.mp4": "/IM.Barber-Landing-page/static/media/1.d7c494622d9249eaa7cb.mp4",
     "static/media/idan.jpg": "/IM.Barber-Landing-page/static/media/idan.a148d9be516bb85c1a20.jpg",
-    "static/media/2.png": "/IM.Barber-Landing-page/static/media/2.a02640261e255e1b7e44.png",
+    "static/media/2.png": "/IM.Barber-Landing-page/static/media/2.5f5afb79a3a02fc84a91.png",
     "static/media/IMG_6661.jpg": "/IM.Barber-Landing-page/static/media/IMG_6661.1d643acafac3f6016613.jpg",
     "static/media/IMG_6663.jpg": "/IM.Barber-Landing-page/static/media/IMG_6663.23dcfcfeea3183fb5dba.jpg",
     "static/media/IMG_5753.jpg": "/IM.Barber-Landing-page/static/media/IMG_5753.594ccdcee768cf5aba9b.jpg",
@@ -20,12 +20,12 @@
     "static/media/brush2.png": "/IM.Barber-Landing-page/static/media/brush2.c8ce214d7f2a0baf535d.png",
     "static/media/abdev.webp": "/IM.Barber-Landing-page/static/media/abdev.9cd56eeee649505dc893.webp",
     "index.html": "/IM.Barber-Landing-page/index.html",
-    "main.4f26bd15.css.map": "/IM.Barber-Landing-page/static/css/main.4f26bd15.css.map",
-    "main.1b1fcf57.js.map": "/IM.Barber-Landing-page/static/js/main.1b1fcf57.js.map",
+    "main.acd765b1.css.map": "/IM.Barber-Landing-page/static/css/main.acd765b1.css.map",
+    "main.e06562de.js.map": "/IM.Barber-Landing-page/static/js/main.e06562de.js.map",
     "787.ca1d11b7.chunk.js.map": "/IM.Barber-Landing-page/static/js/787.ca1d11b7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4f26bd15.css",
-    "static/js/main.1b1fcf57.js"
+    "static/css/main.acd765b1.css",
+    "static/js/main.e06562de.js"
   ]
 }
