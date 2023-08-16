@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/IM.Barber-Landing-page/static/css/main.88c51008.css",
+    "main.css": "/IM.Barber-Landing-page/static/css/main.ca66c417.css",
     "main.js": "/IM.Barber-Landing-page/static/js/main.6d8cf627.js",
     "static/js/787.ca1d11b7.chunk.js": "/IM.Barber-Landing-page/static/js/787.ca1d11b7.chunk.js",
     "static/media/1.mp4": "/IM.Barber-Landing-page/static/media/1.d7c494622d9249eaa7cb.mp4",
@@ -24,12 +24,12 @@
     "static/media/brush2.png": "/IM.Barber-Landing-page/static/media/brush2.27626a3f964aadc681b1.png",
     "static/media/abdev.webp": "/IM.Barber-Landing-page/static/media/abdev.9cd56eeee649505dc893.webp",
     "index.html": "/IM.Barber-Landing-page/index.html",
-    "main.88c51008.css.map": "/IM.Barber-Landing-page/static/css/main.88c51008.css.map",
+    "main.ca66c417.css.map": "/IM.Barber-Landing-page/static/css/main.ca66c417.css.map",
     "main.6d8cf627.js.map": "/IM.Barber-Landing-page/static/js/main.6d8cf627.js.map",
     "787.ca1d11b7.chunk.js.map": "/IM.Barber-Landing-page/static/js/787.ca1d11b7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.88c51008.css",
+    "static/css/main.ca66c417.css",
     "static/js/main.6d8cf627.js"
   ]
 }
