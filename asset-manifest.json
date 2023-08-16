@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/IM.Barber-Landing-page/static/css/main.acd765b1.css",
-    "main.js": "/IM.Barber-Landing-page/static/js/main.e06562de.js",
+    "main.css": "/IM.Barber-Landing-page/static/css/main.4d38007f.css",
+    "main.js": "/IM.Barber-Landing-page/static/js/main.6d8cf627.js",
     "static/js/787.ca1d11b7.chunk.js": "/IM.Barber-Landing-page/static/js/787.ca1d11b7.chunk.js",
     "static/media/1.mp4": "/IM.Barber-Landing-page/static/media/1.d7c494622d9249eaa7cb.mp4",
     "static/media/idan.jpg": "/IM.Barber-Landing-page/static/media/idan.a148d9be516bb85c1a20.jpg",
@@ -15,17 +15,21 @@
     "static/media/IMG_7152.jpg": "/IM.Barber-Landing-page/static/media/IMG_7152.14f0cdb8e49a38543049.jpg",
     "static/media/IMG_2693.jpg": "/IM.Barber-Landing-page/static/media/IMG_2693.747351ec094833d090b3.jpg",
     "static/media/IMG_7135.jpg": "/IM.Barber-Landing-page/static/media/IMG_7135.a3e079029ec97a8ca151.jpg",
+    "static/media/366422800___n.jpg": "/IM.Barber-Landing-page/static/media/366422800_1577079526152606_7295038832287343510_n.eb3829dcf58f189001f0.jpg",
+    "static/media/365973163___n.jpg": "/IM.Barber-Landing-page/static/media/365973163_3611257245820627_9153701522228245834_n.4fe84e918d3d3269f48d.jpg",
+    "static/media/366123880_957821968765001__n.jpg": "/IM.Barber-Landing-page/static/media/366123880_957821968765001_4965962855025676254_n.364f518e65c4d26a9443.jpg",
+    "static/media/367363791___n.jpg": "/IM.Barber-Landing-page/static/media/367363791_6396963823686581_6020232073178473218_n.d3e595e1b18bf0cbaf63.jpg",
     "static/media/rec1.jpg": "/IM.Barber-Landing-page/static/media/rec1.85c6115889ca0aa08d4f.jpg",
     "static/media/logo.svg": "/IM.Barber-Landing-page/static/media/logo.c9c21c2bfda420768220c928ceba0a8a.svg",
-    "static/media/brush2.png": "/IM.Barber-Landing-page/static/media/brush2.c8ce214d7f2a0baf535d.png",
+    "static/media/brush2.png": "/IM.Barber-Landing-page/static/media/brush2.27626a3f964aadc681b1.png",
     "static/media/abdev.webp": "/IM.Barber-Landing-page/static/media/abdev.9cd56eeee649505dc893.webp",
     "index.html": "/IM.Barber-Landing-page/index.html",
-    "main.acd765b1.css.map": "/IM.Barber-Landing-page/static/css/main.acd765b1.css.map",
-    "main.e06562de.js.map": "/IM.Barber-Landing-page/static/js/main.e06562de.js.map",
+    "main.4d38007f.css.map": "/IM.Barber-Landing-page/static/css/main.4d38007f.css.map",
+    "main.6d8cf627.js.map": "/IM.Barber-Landing-page/static/js/main.6d8cf627.js.map",
     "787.ca1d11b7.chunk.js.map": "/IM.Barber-Landing-page/static/js/787.ca1d11b7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.acd765b1.css",
-    "static/js/main.e06562de.js"
+    "static/css/main.4d38007f.css",
+    "static/js/main.6d8cf627.js"
   ]
 }
