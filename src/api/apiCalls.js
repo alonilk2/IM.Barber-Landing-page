@@ -1,9 +1,10 @@
 import axios from "axios";
+import { reviewsQuery } from "../constants";
 
 export const getReviews = async () => {
   try {
     const reviews = await axios.get(
-      "https://maps.googleapis.com/maps/api/place/details/json?place_id=ChIJG9BR5jZPHBURb8zWwC2NxUg&fields=reviews&key=AIzaSyAVXkziwHH3h5oVuob61WZAhxL_6XkXzDc&reviews_no_translations=true"
+      reviewsQuery
     );
     return reviews;
   } catch (e) {

@@ -2,7 +2,7 @@
   "name": "imbarbernew",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://alonilk2.github.io/IM.Barber-Landing-page",
+  "homepage": "https://alonilk2.github.io",
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "@emotion/react": "^11.11.1",
