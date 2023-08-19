@@ -1,5 +1,4 @@
 import "./App.scss";
-import WhatsIncluded from "./components/WhatsIncluded";
 import Header from "./components/Header";
 import Introduction from "./components/Introduction";
 import Lessons from "./components/Lessons";
@@ -8,6 +7,7 @@ import { createTheme } from "@mui/material";
 import { ThemeProvider } from "@emotion/react";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
+import { useRef } from "react";
 
 const darkTheme = createTheme({
   palette: {
@@ -20,14 +20,16 @@ const darkTheme = createTheme({
 });
 
 function App() {
+  const contactRef = useRef(null)
+
   return (
     <ThemeProvider theme={darkTheme}>
       <div className="App">
-        <Header />
+        <Header contactRef={contactRef} />
         <Introduction />
         <Lessons />
+        <Contact ref={contactRef} />
         <FourthSection />
-        <Contact />
 
         <Footer />
       </div>

@@ -5,6 +5,7 @@ $dark-grey: #181a18;
 $light-grey: #f3f5f3;
 $silver: #93a1a3;
 $cherry: #d27d66;
+
 a {
   text-decoration: none;
 }
@@ -40,7 +41,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: "Rubik Dirt", cursive;
+  font-family: "Varela Round", sans-serif;
 }
 
 .row {
@@ -64,6 +65,7 @@ a {
   box-shadow: rgba(206, 206, 206, 0.1) 0px 8px 24px,
     rgba(202, 202, 202, 0.1) 0px 16px 56px,
     rgba(207, 207, 207, 0.1) 0px 24px 80px;
+  font-family: "Rubik Dirt", cursive;
 }
 
 .App-logo-bg {
@@ -85,21 +87,56 @@ a {
   left: 50%;
   transform: translate(-50%, 0);
 }
-
+.App-header .socialsrow {
+  z-index: 2;
+  position: absolute;
+  top: 1%;
+  left: 1%;
+  white-space: nowrap;
+  display: flex;
+  gap: 1%;
+  padding: 0.5% 0.5%;
+  background-color: rgba(207, 207, 207, 0.205);
+  border-radius: 40px;
+  justify-content: center;
+  width: 7vw;
+}
 .appoint {
-  padding: 1% 2%;
+  padding: 0.8% 1.2%;
   background-color: $light-brown;
-  border-radius: 50px;
+  border-radius: 0px;
   overflow: hidden;
-  font-size: 1.5rem;
-  border: 0px solid $light-grey;
+  font-size: 1.3vw;
+  border: 1px solid rgb(255, 243, 176);
   color: $light-grey;
   border-style: solid;
+  position: relative;
+  font-weight: bold;
+  font-family: inherit;
+}
+.App-header .contact-btn {
+  padding: 0.8% 1.2%;
+  background-color: $silver;
+  border-radius: 0px;
+  overflow: hidden;
+  font-size: 1.3vw;
+  border: 1px solid rgb(255, 243, 176);
+  color: $light-grey;
+  border-style: solid;
+  position: relative;
+  font-weight: bold;
+  font-family: inherit;
+}
+.App-header .buttons {
   position: absolute;
   bottom: 5%;
-  left: 50%;
-  transform: translate(-50%, 0);
-  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 1%;
+  font-family: "Varela Round", sans-serif;
 }
 
 .App-header .content {
@@ -129,7 +166,7 @@ a {
 }
 
 .App-header .title {
-  font-size: 3.5rem;
+  font-size: 5vw;
   color: $light-grey;
   margin: 1%;
   font-weight: lighter;
@@ -140,7 +177,7 @@ a {
 }
 
 .App-header .subtitle {
-  font-size: 2.5rem;
+  font-size: 2.5vw;
   margin: 0;
   font-weight: lighter;
   color: $light-brown;
@@ -152,10 +189,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3% 0;
-  box-shadow: rgba(206, 204, 198, 0.048) 0px 8px 24px,
-    rgba(202, 202, 202, 0.062) 0px 16px 56px,
-    rgba(207, 207, 207, 0.062) 0px 24px 80px;
+  padding: 3% 0 1% 0;
   width: 100%;
 }
 
@@ -166,7 +200,7 @@ a {
 }
 
 .first-section p {
-  font-size: 1.3rem;
+  font-size: 1.2vw;
   white-space: wrap;
 }
 
@@ -175,6 +209,7 @@ a {
   padding: 2% 5%;
   margin: auto;
   padding-left: 2%;
+  font-family: "Varela Round", sans-serif;
 }
 
 .first-section .special-bg {
@@ -184,15 +219,16 @@ a {
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;
-  -webkit-text-stroke: 0.02px black;
-  font-size: 1.8rem;
+  font-size: 2vw;
 }
 
 .first-section .right-pane {
   flex: 1;
-  font-size: 2.8rem;
+  font-size: 2.4vw;
   padding-right: 2%;
   margin: auto;
+  text-align: center;
+  font-weight: 700;
 }
 
 .first-section .gold-text {
@@ -205,7 +241,7 @@ a {
 .image-container {
   margin: auto;
   margin-bottom: 5%;
-  width: 70%;
+  width: 80%;
   border: #000 1px solid;
   display: flex;
   flex-direction: row;
@@ -216,11 +252,11 @@ a {
   background-color: $light-brown;
 }
 .image {
-  flex: 2
+  flex: 2;
 }
 .image-container .text {
   padding: 5%;
-  font-size: 1.3rem;
+  font-size: 1vw;
   line-height: 1.5;
   font-weight: 500;
   flex: 2;
@@ -229,7 +265,8 @@ a {
   margin: 0;
 }
 .image-container img {
-  max-width: 100%; 
+  max-width: 100%;
+  display: block;
 }
 .second-section {
   background-image: url("./assets/2.png");
@@ -258,22 +295,6 @@ a {
   margin-top: 2%;
 }
 
-.second-section .included-box {
-  border-radius: 25px;
-  background-color: rgba(255, 255, 255, 0.92);
-  width: 320px;
-  margin: 1% 2%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #000;
-  font-weight: lighter;
-  font-size: 1.5rem;
-  text-align: center;
-  padding: 2%;
-  line-height: 1.8;
-}
-
 .second-section .row {
   padding: 0 10%;
   justify-content: center;
@@ -288,13 +309,14 @@ a {
   left: 0;
   z-index: 0;
 }
+
 .first-section h2,
 .second-section h2,
 .third-section h2,
 .gallery h2 {
   position: relative;
   font-weight: lighter;
-  font-size: 3.5rem;
+  font-size: 2.8vw;
   white-space: nowrap;
 }
 
@@ -307,15 +329,19 @@ a {
   z-index: 1;
   margin: 1.5%;
   width: 350px;
-}
-.courses-title {
-  font-size: 2.5rem;
+  font-family: "Rubik Dirt", cursive;
 }
 
 .MuiTypography-root {
   text-align: right;
 }
-
+.rounded-outline {
+  border: 2px dashed #c39125;
+  width: 85%;
+  min-height: 93%;
+  position: absolute;
+  border-radius: 50px;
+}
 .third-section {
   overflow: hidden;
   position: relative;
@@ -327,20 +353,18 @@ a {
 }
 
 .third-section .details {
-  font-size: 1.5rem;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.2vw;
   padding: 0 10%;
 }
 .course-container {
   padding: 3% 5%;
   width: 80vw;
-
 }
 .course-container p {
-  font-size: 1.2rem;
+  font-size: 1.1vw;
 }
- .course-container li {
-  font-size: 1.1rem;
+.course-container li {
+  font-size: 1.1vw;
 }
 .third-section .lessons {
   display: flex;
@@ -365,7 +389,7 @@ a {
 .video-container {
   background-color: #292929;
   padding: 1% 0;
-  margin-bottom: 2%;
+  margin-bottom: 5%;
   width: 100%;
 }
 .gallery {
@@ -378,11 +402,11 @@ a {
 }
 .video-title {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.4vw;
 }
 .gallery p {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 2rem;
+  font-size: 1.8vw;
   font-weight: 100;
   margin: 0.5% 0;
   font-style: italic;
@@ -390,15 +414,15 @@ a {
 }
 .recommendation {
   display: flex;
-  flex-direction: column;
-  align-items: end;
+  flex-direction: row;
   margin-bottom: 4%;
   background-color: #292929;
-  border-radius: 10px;
+  border-radius: 25px;
   padding: 2%;
+  gap: 5px;
 }
 .recommendation .name {
-  font-size: 1.5rem;
+  font-size: 1.3vw;
 }
 .footer {
   margin-top: 2%;
@@ -406,7 +430,6 @@ a {
   flex-direction: column;
   align-items: center;
   padding: 5%;
-  width: 100%;
 }
 .socials {
   width: 100%;
@@ -427,9 +450,26 @@ a {
 .recommended {
   position: absolute;
   display: inline-block;
-  font-size: 1rem;
+  font-size: 1.2vw;
   transform: rotate(-30deg);
   color: $cherry;
+}
+.review-container {
+  width: 30%;
+  background-color: rgba(202, 202, 202, 0.1);
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2%;
+  flex: 1;
+}
+.review-container p {
+  font-size: 0.9vw;
+  margin: 2%;
+}
+.review-container .name {
+  font-size: 0.8vw;
 }
 .courseheader {
   display: flex;
@@ -440,6 +480,7 @@ a {
   justify-content: space-around;
   margin: 0 auto 2% auto;
   background-color: #292929;
+  overflow: hidden;
 }
 
 .courseheader-column {
@@ -451,16 +492,16 @@ a {
   text-align: center;
 }
 .courseheader-column-number {
-  font-size: 3rem;
+  font-size: 2.8vw;
   margin: 0;
 }
 
 .courseheader-column-title {
-  font-size: 1.5rem;
+  font-size: 1.4vw;
   margin: 0;
 }
 .courseheader-column-title-large {
-  font-size: 2rem;
+  font-size: 1.8vw;
 }
 .MuiInputLabel-root {
   left: unset;
@@ -473,12 +514,14 @@ a {
   height: 50vh;
   display: flex;
   flex-direction: row;
-  padding-top: 5%;
   flex: 1;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  border: 2px solid $silver;
 }
 
 .contact-section p {
-  font-size: 1.3rem;
+  font-size: 1.2vw;
   white-space: wrap;
 }
 
@@ -490,18 +533,180 @@ a {
 
 .contact-section .right-pane {
   flex: 1;
-  font-size: 2.8rem;
+  font-size: 2.6vw;
   padding-right: 3%;
   margin: auto;
+  font-family: "Rubik Dirt", cursive;
 }
 
 .video {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 2%;
 }
 
 .video iframe {
   border: unset;
+}
+@media only screen and (max-width: 1024px) {
+  .first-section p {
+    font-size: 1.8vw;
+  }
+  .first-section .special-bg {
+    font-size: 2.2vw;
+  }
+  .first-section .right-pane h3 {
+    text-align: center;
+    font-size: 4vw;
+  }
+  .course-container p {
+    font-size: 2vw;
+  }
+  .course-container li {
+    font-size: 1.9vw;
+  }
+  .rounded-outline {
+    width: 90%;
+    height: 95%;
+  }
+  .recommendation {
+    flex-direction: column;
+  }
+  .review-container p {
+    font-size: 2.6vw;
+  }
+  .review-container .name {
+    font-size: 2.2vw;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .video-container {
+    margin: 25%;
+    margin-bottom: 40%;
+  }
+  .App-header .buttons {
+    flex-direction: column;
+  }
+  .first-section .right-pane h3 {
+    font-size: 8vw;
+  }
+  .App .video {
+    height: 70vh;
+    object-fit: cover;
+  }
+  .App-header {
+    max-height: 150vh;
+  }
+  .introduction {
+    flex-direction: column;
+  }
+  .appoint {
+    font-size: 5vw;
+    font-weight: 400;
+    white-space: nowrap;
+    width: 60vw;
+    margin-bottom: 2%;
+    padding: 2%;
+  }
+  .App-header .contact-btn {
+    font-size: 5vw;
+    font-weight: 400;
+    white-space: nowrap;
+    width: 60vw;
+    padding: 2%;
+  }
+  .App-header .subtitle {
+    font-size: 6vw;
+  }
+  .App-header .title {
+    text-align: center;
+    font-size: 10vw;
+  }
+  .first-section .right-pane {
+    font-size: 7vw;
+    text-align: center;
+  }
+  .first-section p {
+    font-size: 4.5vw;
+  }
+  .first-section .special-bg {
+    font-size: 6vw;
+  }
+  .video-title {
+    font-size: 6vw;
+  }
+  .first-section h2,
+  .second-section h2,
+  .third-section h2,
+  .gallery h2 {
+    font-size: 7vw;
+  }
+  .image-container {
+    flex-direction: column;
+    margin: 10% 0;
+  }
+  .brush {
+    width: 60vw;
+  }
+  .courseheader-column-title-large {
+    font-size: 4.5vw;
+  }
+  .courseheader-column-number {
+    font-size: 8vw;
+  }
+  .courseheader-column-title {
+    font-size: 3.5vw;
+  }
+  .right-pane .socialsrow {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    margin-bottom: 5%;
+  }
+  .recommended {
+    font-weight: 700;
+    font-size: 2vw;
+    left: 0%;
+    top: -50%;
+  }
+  .courseheader {
+    margin: inherit;
+    overflow: hidden;
+  }
+  .rounded-outline {
+    width: 96%;
+    min-height: 98%;
+  }
+  .course-container p {
+    font-size: 4vw;
+  }
+  .course-container li {
+    font-size: 3.8vw;
+  }
+  .contact-section {
+    flex-direction: column;
+  }
+  .contact-section h5 {
+    font-size: 6vw;
+  }
+  .contact-section .right-pane {
+    padding-left: 3%;
+  }
+  .image-container {
+    width: 90%;
+  }
+  .recommendation {
+    flex-direction: column;
+  }
+  .review-container {
+    width: 96%;
+  }
+  .review-container p {
+    font-size: 3.2vw;
+  }
+  .review-container .name {
+    font-size: 2.2vw;
+  }
 }

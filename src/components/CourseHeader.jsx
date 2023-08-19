@@ -4,7 +4,14 @@ export default function CourseHeader({ courseType, lessonsCount, equipType }) {
   return (
     <div className="courseheader">
       <div className="courseheader-column">
-        <p className="courseheader-column-title-large light-brown">
+        <p
+          className="courseheader-column-title-large light-brown"
+          style={
+            courseType === "קורס אינטנסיבי" ? {
+              transform: `translateX(-5%)`,
+            } : null
+          }
+        >
           {courseType}
           {courseType === "קורס אינטנסיבי" && (
             <span className="recommended">(מומלץ)</span>
