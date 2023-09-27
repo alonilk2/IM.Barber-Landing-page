@@ -5,7 +5,7 @@ export default function Introduction() {
   return (
     <section className="first-section">
       <div className="introduction">
-      <Fade right cascade>
+        <Fade right cascade>
           <div className="right-pane">
             <h3>
               האקדמיה של IM.Barber
@@ -41,7 +41,7 @@ export default function Introduction() {
       </div>
 
       <div className="video-container">
-        <Fade right >
+        <Fade right>
           <h5 className="video-title">על הקורס</h5>
 
           <div className="video">
@@ -60,9 +60,7 @@ export default function Introduction() {
 
       <Fade right cascade>
         <div className="image-container">
-          <div className="image">
-            <img src={img1} alt="idan" />
-          </div>
+          <img src={img1} alt="idan" />
           <div className="text">
             <h2>קצת עליי</h2>
             <p>

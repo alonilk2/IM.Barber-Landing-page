@@ -34,6 +34,17 @@ const Contact = forwardRef(function Contact(props, ref) {
     <section className="contact-section" ref={ref}>
       <div className="right-pane" dir="rtl">
         <h5>רוצה עוד פרטים?</h5>
+        <p className="contact-text">
+          כתובתנו: <br />
+          רחוב יקינטון 3, הר יונה
+          <br />
+          נוף הגליל 17500
+        </p>
+        <p className="contact-text">
+          פלאפון:
+          <br />
+          052-7481028
+        </p>
         {width < 520 && (
           <div className="socialsrow">
             <SocialIcon
@@ -41,11 +52,11 @@ const Contact = forwardRef(function Contact(props, ref) {
               style={{ width: "40px", height: "40px" }}
             />
             <SocialIcon
-              url="https://www.instagram.com/_im.barber_/"
+              url="https://www.instagram.com/imbarber_academy"
               style={{ width: "40px", height: "40px" }}
             />
             <SocialIcon
-              url="https://www.facebook.com/idan.mavlyev"
+              url="https://www.facebook.com/idanbarber"
               style={{ width: "40px", height: "40px" }}
             />
           </div>

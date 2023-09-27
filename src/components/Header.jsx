@@ -28,7 +28,7 @@ export default function Header({contactRef}) {
         </div>
       </div>
       <div className="buttons">
-      <button href="https://bit.ly/3L7waFg" className="appoint">
+      <button onClick={()=>window.location.href="https://bit.ly/3L7waFg"} className="appoint">
         קביעת תור לתספורת
       </button>
       <button onClick={scrollToComponent} className="contact-btn">
@@ -38,9 +38,9 @@ export default function Header({contactRef}) {
 
       {width > 520 && (
         <div className="socialsrow">
-          <SocialIcon url="https://www.tiktok.com/@idan_mavlayev?lang=he-IL" style={{width: "30px", height: "30px"}}/>
-          <SocialIcon url="https://www.instagram.com/_im.barber_/" style={{width: "30px", height: "30px"}}/>
-          <SocialIcon url="https://www.facebook.com/idan.mavlyev" style={{width: "30px", height: "30px"}}/>
+          <SocialIcon url="https://www.tiktok.com/@idan_mavlayev?lang=he-IL" style={{width: "1.5vw", height: "1.5vw"}}/>
+          <SocialIcon url="https://www.instagram.com/imbarber_academy" style={{width: "1.5vw", height: "1.5vw"}}/>
+          <SocialIcon url="https://www.facebook.com/idanbarber" style={{width: "1.5vw", height: "1.5vw"}}/>
         </div>
       )}
     </header>

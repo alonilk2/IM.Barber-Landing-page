@@ -94,12 +94,14 @@ a {
   left: 1%;
   white-space: nowrap;
   display: flex;
-  gap: 1%;
-  padding: 0.5% 0.5%;
   background-color: rgba(207, 207, 207, 0.205);
   border-radius: 40px;
   justify-content: center;
   width: 7vw;
+  margin: 2px;
+  height: 2.5vw;
+  justify-content: space-evenly;
+  align-items: center;
 }
 .appoint {
   padding: 0.8% 1.2%;
@@ -114,6 +116,9 @@ a {
   font-weight: bold;
   font-family: inherit;
 }
+.appoint:hover {
+background-color: #977011;
+}
 .App-header .contact-btn {
   padding: 0.8% 1.2%;
   background-color: $silver;
@@ -126,6 +131,9 @@ a {
   position: relative;
   font-weight: bold;
   font-family: inherit;
+}
+.App-header .contact-btn:hover {
+  background-color: #788385;
 }
 .App-header .buttons {
   position: absolute;
@@ -230,7 +238,13 @@ a {
   text-align: center;
   font-weight: 700;
 }
+.contact-section .right-pane h5 {
+  margin-bottom: 4%;
+}
+.contact-text {
+  font-family: "Varela Round", sans-serif !important;
 
+}
 .first-section .gold-text {
   color: $light-brown;
 }
@@ -265,8 +279,7 @@ a {
   margin: 0;
 }
 .image-container img {
-  max-width: 100%;
-  display: block;
+  max-width: 50%;
 }
 .second-section {
   background-image: url("./assets/2.png");
@@ -450,8 +463,8 @@ a {
 .recommended {
   position: absolute;
   display: inline-block;
-  font-size: 1.2vw;
-  transform: rotate(-30deg);
+  font-size: 1.3vw;
+  transform: rotate(-20deg);
   color: $cherry;
 }
 .review-container {
@@ -517,7 +530,9 @@ a {
   flex: 1;
   margin-top: 2%;
   margin-bottom: 2%;
-  border: 2px solid $silver;
+  border-top: 2px solid $silver;
+  border-bottom: 2px solid $silver;
+  padding: 2% 0;
 }
 
 .contact-section p {
@@ -529,6 +544,7 @@ a {
   flex: 1;
   padding-right: 5%;
   padding-left: 3%;
+  display: flex;
 }
 
 .contact-section .right-pane {
@@ -578,9 +594,17 @@ a {
   .review-container .name {
     font-size: 2.2vw;
   }
+
 }
 
 @media only screen and (max-width: 520px) {
+  .image-container img {
+    max-width: 100%;
+    display: block;
+  }
+  .contact-section p {
+    font-size: 4vw;
+  }
   .video-container {
     margin: 25%;
     margin-bottom: 40%;
@@ -667,9 +691,9 @@ a {
   }
   .recommended {
     font-weight: 700;
-    font-size: 2vw;
+    font-size: 2.4vw;
     left: 0%;
-    top: -50%;
+    top: -52%;
   }
   .courseheader {
     margin: inherit;
