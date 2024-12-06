@@ -2,10 +2,14 @@ $lighter-gold: #ffd700;
 $light-gold: #ddb900;
 $light-brown: #c49216;
 $dark-grey: #181a18;
-$light-grey: #f3f5f3;
 $silver: #93a1a3;
 $cherry: #d27d66;
-
+@font-face {
+  font-family: 'almoni';
+  src: local('almoni'), url(./assets/almoni-dl-aaa-bold.otf) format('opentype');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
 a {
   text-decoration: none;
 }
@@ -36,12 +40,12 @@ a {
   width: 100%;
   direction: rtl;
   background-color: $dark-grey;
-  color: $light-grey;
+  color: white;
   line-height: 1.2;
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: "Varela Round", sans-serif;
+  font-family: "Almoni", sans-serif;
 }
 
 .row {
@@ -65,7 +69,7 @@ a {
   box-shadow: rgba(206, 206, 206, 0.1) 0px 8px 24px,
     rgba(202, 202, 202, 0.1) 0px 16px 56px,
     rgba(207, 207, 207, 0.1) 0px 24px 80px;
-  font-family: "Rubik Dirt", cursive;
+  font-family: "Almoni", cursive;
 }
 
 .App-logo-bg {
@@ -78,7 +82,67 @@ a {
   display: flex;
   width: 100%;
 }
+.followus {
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+
+  position: relative;
+  height: 15vw;
+}
+.followus p {
+  z-index: 1;
+  color: black !important;
+  font-family: "Almoni" !important;
+  font-style: unset !important;
+  position: absolute;
+  transform: translate(-50%, -50%); /* Tilt the square by 45 degrees */
+  top: 50%;          /* Vertically center */
+  left: 50%;         /* Horizontally center */
+  white-space: nowrap;
+  font-size: 2.4vw !important;
+  font-weight: 900;
+}
+.socialsrow-follow {
+  position: absolute;
+  top: 68%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  left: 50%;
+}
+.followus .back {
+  top: 50%;          /* Vertically center */
+  color: $light-brown !important;
+  transform: translate(-50.5%, -50.5%);
+
+}
+.followus .back-1 {
+  top: 50%;          /* Vertically center */
+  color: gray !important;
+  transform: translate(-50%, -46.5%);
+}
+.rectangle-yellow {
+  position: absolute;
+  width: 38vw;
+  height: 10vw;
+  background-color: $light-brown;
+  z-index: 0;
+  transform: rotate(3deg) translate(-50%, -50%);
+  top: 62%;
+  left: 50%;         /* Horizontally center */
+}
+.rectangle-white {
+  position: absolute;
+  width: 34vw;
+  height: 10vw;
+  background-color: white;
+  z-index: 0;
+  transform: rotate(-3deg) translate(-50%, -50%); /* Tilt the square by 45 degrees */
+  top: 53%;          /* Vertically center */
+  left: 51%;         /* Horizontally center */
+}
 .App-logo {
   width: 300px;
   margin: 2% 0;
@@ -97,40 +161,38 @@ a {
   background-color: rgba(207, 207, 207, 0.205);
   border-radius: 40px;
   justify-content: center;
-  width: 7vw;
+  width: 9vw;
   margin: 2px;
-  height: 2.5vw;
+  height: 3vw;
   justify-content: space-evenly;
   align-items: center;
 }
 .appoint {
-  padding: 0.8% 1.2%;
+  padding: 1% 1.4%;
   background-color: $light-brown;
-  border-radius: 0px;
+  border-radius: 50px;
   overflow: hidden;
   font-size: 1.3vw;
-  border: 1px solid rgb(255, 243, 176);
-  color: $light-grey;
-  border-style: solid;
+  color: white;
   position: relative;
   font-weight: bold;
   font-family: inherit;
+  border: 0;
 }
 .appoint:hover {
 background-color: #977011;
 }
 .App-header .contact-btn {
-  padding: 0.8% 1.2%;
+  padding: 1% 1.4%;
   background-color: $silver;
-  border-radius: 0px;
+  border-radius: 50px;
   overflow: hidden;
   font-size: 1.3vw;
-  border: 1px solid rgb(255, 243, 176);
-  color: $light-grey;
-  border-style: solid;
+  color: black;
   position: relative;
   font-weight: bold;
   font-family: inherit;
+  border: 0;
 }
 .App-header .contact-btn:hover {
   background-color: #788385;
@@ -144,7 +206,7 @@ background-color: #977011;
   align-items: center;
   width: 100%;
   gap: 1%;
-  font-family: "Varela Round", sans-serif;
+  font-family: "Almoni", sans-serif;
 }
 
 .App-header .content {
@@ -171,11 +233,13 @@ background-color: #977011;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  font-family: Rubik Dirt, cursive;
+
 }
 
 .App-header .title {
   font-size: 5vw;
-  color: $light-grey;
+  color: white;
   margin: 1%;
   font-weight: lighter;
 }
@@ -217,7 +281,7 @@ background-color: #977011;
   padding: 2% 5%;
   margin: auto;
   padding-left: 2%;
-  font-family: "Varela Round", sans-serif;
+  font-family: "Almoni", sans-serif;
 }
 
 .first-section .special-bg {
@@ -240,9 +304,10 @@ background-color: #977011;
 }
 .contact-section .right-pane h5 {
   margin-bottom: 4%;
+  margin-top: 0;
 }
 .contact-text {
-  font-family: "Varela Round", sans-serif !important;
+  font-family: "Almoni", sans-serif !important;
 
 }
 .first-section .gold-text {
@@ -342,7 +407,7 @@ background-color: #977011;
   z-index: 1;
   margin: 1.5%;
   width: 350px;
-  font-family: "Rubik Dirt", cursive;
+  font-family: "Almoni", cursive;
 }
 
 .MuiTypography-root {
@@ -395,15 +460,43 @@ background-color: #977011;
   justify-content: center;
   background-color: #292929 !important;
 }
-
+.MuiButton-root {
+  border-color: white !important;
+  color: white !important;
+}
 .MuiBox-root {
   background-color: #292929 !important;
 }
+.image-idan {
+  flex: 1;
+  width: 50%;
+}
 .video-container {
-  background-color: #292929;
-  padding: 1% 0;
   margin-bottom: 5%;
   width: 100%;
+  display: flex;
+  font-weight: 900;
+  
+}
+.idan-container {
+  background-color: $light-brown;
+  margin-bottom: 5%;
+  width: 100%;
+  display: flex;
+  font-weight: 900;
+}
+
+.idan-container .text {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 2%;
+}
+.idan-container .text p {
+  font-size: 2.0vw;
+
 }
 .gallery {
   position: relative;
@@ -528,11 +621,7 @@ background-color: #977011;
   display: flex;
   flex-direction: row;
   flex: 1;
-  margin-top: 2%;
-  margin-bottom: 2%;
-  border-top: 2px solid $silver;
-  border-bottom: 2px solid $silver;
-  padding: 2% 0;
+
 }
 
 .contact-section p {
@@ -543,16 +632,16 @@ background-color: #977011;
 .contact-section .left-pane {
   flex: 1;
   padding-right: 5%;
-  padding-left: 3%;
+  padding-left: 2%;
   display: flex;
 }
 
 .contact-section .right-pane {
   flex: 1;
   font-size: 2.6vw;
-  padding-right: 3%;
-  margin: auto;
-  font-family: "Rubik Dirt", cursive;
+  font-family: "Almoni", cursive;
+  background-color: $light-brown;
+  padding: 2%;
 }
 
 .video {

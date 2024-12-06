@@ -6,6 +6,7 @@ import useWindowSize from "../hooks/useWindowSize";
 import { SocialIcon } from "react-social-icons";
 import emailjs from "@emailjs/browser";
 import { publickey } from "../constants";
+import { Zoom } from "react-reveal";
 
 const Contact = forwardRef(function Contact(props, ref) {
   const [content, setContent] = useState(
@@ -32,6 +33,7 @@ const Contact = forwardRef(function Contact(props, ref) {
 
   return (
     <section className="contact-section" ref={ref}>
+      <Zoom>
       <div className="right-pane" dir="rtl">
         <h5>רוצה עוד פרטים?</h5>
         <p className="contact-text">
@@ -123,6 +125,8 @@ const Contact = forwardRef(function Contact(props, ref) {
           />
         )}
       </div>
+      </Zoom>
+
       {success === true && (
         <Snackbar
           open={success === true}

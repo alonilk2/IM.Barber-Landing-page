@@ -38,9 +38,9 @@ export default function Header({contactRef}) {
 
       {width > 520 && (
         <div className="socialsrow">
-          <SocialIcon url="https://www.tiktok.com/@idan_mavlayev?lang=he-IL" style={{width: "1.5vw", height: "1.5vw"}}/>
-          <SocialIcon url="https://www.instagram.com/imbarber_academy" style={{width: "1.5vw", height: "1.5vw"}}/>
-          <SocialIcon url="https://www.facebook.com/idanbarber" style={{width: "1.5vw", height: "1.5vw"}}/>
+          <SocialIcon url="https://www.tiktok.com/@idan_mavlayev?lang=he-IL" style={{width: "2.0vw", height: "2.0vw"}}/>
+          <SocialIcon url="https://www.instagram.com/imbarber_academy" style={{width: "2.0vw", height: "2.0vw"}}/>
+          <SocialIcon url="https://www.facebook.com/idanbarber" style={{width: "2.0vw", height: "2.0vw"}}/>
         </div>
       )}
     </header>

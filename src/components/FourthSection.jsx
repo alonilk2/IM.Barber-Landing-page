@@ -12,6 +12,7 @@ import img10 from "../assets/images/367363791_6396963823686581_60202320731784732
 import img11 from "../assets/images/365973163_3611257245820627_9153701522228245834_n.jpg";
 import img12 from "../assets/images/366123880_957821968765001_4965962855025676254_n.jpg";
 import GoogleReview from "./GoogleReview";
+import { SocialIcon } from "react-social-icons";
 
 const photos = [
   {
@@ -156,6 +157,20 @@ const reviews = [
 export default function FourthSection() {
   return (
     <section className="gallery">
+      <div className="followus">
+        <div className="rectangle-yellow" />
+        <div className="rectangle-white" />
+
+        <p className="back">יש מצב שאתה עוד לא עוקב?!</p>
+        <p className="back-1">יש מצב שאתה עוד לא עוקב?!</p>
+        <p className="front">יש מצב שאתה עוד לא עוקב?!</p>
+        <div className="socialsrow-follow">
+        <SocialIcon url="https://www.tiktok.com/@idan_mavlayev?lang=he-IL" style={{width: "2.5vw", height: "2.5vw"}}/>
+          <SocialIcon url="https://www.instagram.com/imbarber_academy" style={{width: "2.5vw", height: "2.5vw"}}/>
+          <SocialIcon url="https://www.facebook.com/idanbarber" style={{width: "2.5vw", height: "2.5vw"}}/>
+        </div>
+
+      </div>
       <div className="brush">
         <h2>לקוחות ממליצים</h2>
       </div>
