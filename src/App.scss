@@ -654,6 +654,20 @@ background-color: #977011;
   border: unset;
 }
 @media only screen and (max-width: 1024px) {
+  .followus .back {
+    top: 40%;          /* Vertically center */
+    transform: translate(-50.5%, -50.5%);
+  
+  }
+  .followus .back-1 {
+    top: 40%;          /* Vertically center */
+    color: gray !important;
+    transform: translate(-50%, -46.5%);
+  }
+  .followus p {
+    top: 40%;          /* Vertically center */
+
+  }
   .first-section p {
     font-size: 1.8vw;
   }
@@ -687,6 +701,35 @@ background-color: #977011;
 }
 
 @media only screen and (max-width: 520px) {
+  .socialsrow-follow {
+    top: 85%;
+  }
+  .followus {
+    margin: 10% 0;
+  }
+  .followus p {
+    font-size: 6vw !important;
+  }
+  .rectangle-yellow {
+    position: absolute;
+    width: 78vw;
+    height: 20vw;
+    top: 75% !important;
+  }
+  .rectangle-white {
+    width: 74vw;
+    height: 20vw;
+
+  }
+  .idan-container {
+    flex-direction: column;
+  }
+  .idan-container .image-idan {
+    width: 100%;
+  }
+  .idan-container .text p {
+    font-size: 6vw;
+  }
   .image-container img {
     max-width: 100%;
     display: block;
@@ -695,8 +738,9 @@ background-color: #977011;
     font-size: 4vw;
   }
   .video-container {
-    margin: 25%;
-    margin-bottom: 40%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
   }
   .App-header .buttons {
     flex-direction: column;
@@ -735,6 +779,9 @@ background-color: #977011;
   .App-header .title {
     text-align: center;
     font-size: 10vw;
+  }
+  .third-section {
+    margin-bottom: 5%;
   }
   .first-section .right-pane {
     font-size: 7vw;
@@ -805,7 +852,9 @@ background-color: #977011;
     font-size: 6vw;
   }
   .contact-section .right-pane {
-    padding-left: 3%;
+  }
+  .contact-section .left-pane {
+    padding: 0;
   }
   .image-container {
     width: 90%;

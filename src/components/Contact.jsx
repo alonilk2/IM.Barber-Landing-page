@@ -47,22 +47,6 @@ const Contact = forwardRef(function Contact(props, ref) {
           <br />
           052-7481028
         </p>
-        {width < 520 && (
-          <div className="socialsrow">
-            <SocialIcon
-              url="https://www.tiktok.com/@idan_mavlayev?lang=he-IL"
-              style={{ width: "40px", height: "40px" }}
-            />
-            <SocialIcon
-              url="https://www.instagram.com/imbarber_academy"
-              style={{ width: "40px", height: "40px" }}
-            />
-            <SocialIcon
-              url="https://www.facebook.com/idanbarber"
-              style={{ width: "40px", height: "40px" }}
-            />
-          </div>
-        )}
         <form
           className="col contact-container"
           dir="rtl"

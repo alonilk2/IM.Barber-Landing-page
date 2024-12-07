@@ -13,6 +13,7 @@ import img11 from "../assets/images/365973163_3611257245820627_91537015222282458
 import img12 from "../assets/images/366123880_957821968765001_4965962855025676254_n.jpg";
 import GoogleReview from "./GoogleReview";
 import { SocialIcon } from "react-social-icons";
+import useWindowSize from "../hooks/useWindowSize";
 
 const photos = [
   {
@@ -155,6 +156,8 @@ const reviews = [
 ];
 
 export default function FourthSection() {
+  const { width } = useWindowSize();
+
   return (
     <section className="gallery">
       <div className="followus">
@@ -165,20 +168,47 @@ export default function FourthSection() {
         <p className="back-1">יש מצב שאתה עוד לא עוקב?!</p>
         <p className="front">יש מצב שאתה עוד לא עוקב?!</p>
         <div className="socialsrow-follow">
-        <SocialIcon url="https://www.tiktok.com/@idan_mavlayev?lang=he-IL" style={{width: "2.5vw", height: "2.5vw"}}/>
-          <SocialIcon url="https://www.instagram.com/imbarber_academy" style={{width: "2.5vw", height: "2.5vw"}}/>
-          <SocialIcon url="https://www.facebook.com/idanbarber" style={{width: "2.5vw", height: "2.5vw"}}/>
+          {width < 550 ? (
+            <>
+              <SocialIcon
+                url="https://www.tiktok.com/@idan_mavlayev?lang=he-IL"
+                style={{ width: "8vw", height: "8vw" }}
+              />
+              <SocialIcon
+                url="https://www.instagram.com/imbarber_academy"
+                style={{ width: "8vw", height: "8vw" }}
+              />
+              <SocialIcon
+                url="https://www.facebook.com/idanbarber"
+                style={{ width: "8vw", height: "8vw" }}
+              />
+            </>
+          ) : (
+            <>
+              <SocialIcon
+                url="https://www.tiktok.com/@idan_mavlayev?lang=he-IL"
+                style={{ width: "2.5vw", height: "2.5vw" }}
+              />
+              <SocialIcon
+                url="https://www.instagram.com/imbarber_academy"
+                style={{ width: "2.5vw", height: "2.5vw" }}
+              />
+              <SocialIcon
+                url="https://www.facebook.com/idanbarber"
+                style={{ width: "2.5vw", height: "2.5vw" }}
+              />
+            </>
+          )}
         </div>
-
       </div>
       <div className="brush">
         <h2>לקוחות ממליצים</h2>
       </div>
-        <div className="recommendation">
-          {reviews.map((review) => (
-            <GoogleReview review={review} />
-          ))}
-        </div>
+      <div className="recommendation">
+        {reviews.map((review) => (
+          <GoogleReview review={review} />
+        ))}
+      </div>
 
       <PhotoAlbum />
     </section>
